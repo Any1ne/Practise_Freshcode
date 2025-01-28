@@ -1,0 +1,14 @@
+p {
+    border: 2px solid black;
+    height: 1em;
+}
+
+section{
+    border: 2px solid blue;
+    margin: 10px;
+}
+
+header, main, footer {
+    border: 2px solid red;
+    margin: 10px;
+}
