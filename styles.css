@@ -1,14 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto/Roboto-Medium.ttf') format("truetype");
+}
+
+/* General styles */
+body {
+    font-family: "Montserrat";
+    font-size: 1em;
+    background-color: white;
+}
+
+/* Header styles*/
+
+.header-container {
+    display: flex;
+    align-items: center;
+    /* padding: 2.2em 3.94em; */
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item {
+    margin-left: 3.1em;
+}
+
+.blue-button{
+    text-transform: uppercase;
+    background-color: #7AE5FD;
+    padding: 1.15em 1.94em;
+    border-radius: 4.8em;
+    margin-left: 1.3em;
+}
+
+
+/* Main styles */
+.first-screen{
+    /* background-color: aqua; */
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/First_screen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    margin-top: 15vh;
+}
+
+
+
 p {
     border: 2px solid black;
-    height: 1em;
+    /* height: 1em; */
 }
 
 section{
     border: 2px solid blue;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 header, main, footer {
     border: 2px solid red;
-    margin: 10px;
+    /* margin: 10px; */
 }
