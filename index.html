@@ -1,95 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-</head>
-<body>
-    <header class = "header-container">
-        <img class = "header-logo" src="./assets/logo.svg" alt = "Logo">
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <nav class = "header-nav">
-            <ul class = "menu-list">
-                <li class = "menu-item"><a>Контакти</a></li>
-                <li class = "menu-item"><a>Головна</a></li>
-                <li class = "menu-item"><a>З чим ми працюємо</a></li>
-                <li class = "menu-item blue-button">Підтримати Фонд</li>
-            </ul>           
-        </nav>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header-container flex-wraper">
+      <img class="header-logo" src="./assets/logo.svg" alt="Logo" />
+
+      <nav class="header-nav flex-wraper">
+        <ul class="menu-list flex-wraper">
+          <li class="menu-item"><a>Контакти</a></li>
+          <li class="menu-item"><a>Головна</a></li>
+          <li class="menu-item"><a>З чим ми працюємо</a></li>
+          <li class="menu-item button blue">Підтримати Фонд</li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="main-container">
-        <section class = "first-screen">
-            <h1>Фонд підтримки постраждалих від війни</h1>
-            <p>Ми хочемо допомогти кожному, хто постраждав під час війни</p>
-            <button>Підтримати фонд</button>
-        </section>
+    <main class="main-container flex-column-wraper">
+      <section class="firstscreen-container flex-wraper">
+        <div class="firstscreen flex-column-wraper">
+          <h1 class="firstscreen-header">
+            Фонд підтримки постраждалих від війни
+          </h1>
+          <p class="small-text">
+            Ми хочемо допомогти кожному, хто постраждав під час війни
+          </p>
 
-        <section>
-            <h2>Ми – фонд підтримки постраждалих від війни</h2>
-            <h4>Наша мета – психологічна та гуманітарна допомога українцям</h4>
-            <h5>Кожен, хто звернеться, отримає допомогу, яка у наших силах</h5>
+          <button class="button white">Підтримати фонд</button>
+        </div>
+      </section>
 
-            <article>
-                <h3>Реабілітаційний центр</h3>
-                <p>Ми допомагаємо людям, які постраждали знайти правильне лікування. У нашому фонді є чотири напрями: фізичної та реабілітаційної медицини, терапевтичне, неврологічне та хірургічне. Ми маємо заклади-партнери, де швидко та якісно можуть надати допомогу.</p>
-                <img src="./assets/photo1.png" alt="photo">
-            </article>
+      <section class="introduction-container">
+        <h2 class="introduction-header">
+          Ми – фонд підтримки постраждалих від війни
+        </h2>
+        <h4 class="medium-text">
+          Наша мета – психологічна та гуманітарна допомога українцям
+        </h4>
+        <h5 class="grey-text">
+          Кожен, хто звернеться, отримає допомогу, яка у наших силах
+        </h5>
+      </section>
 
-            <article>
-                <h3>Робота з дітьми</h3>
-                <p>Діти – найвразливіша частина суспільства, і їм особливо потрібна підтримка дорослих. Тому наш фонд збирає речі для дітей, проводить літні й зимові табори, майстер-класи та за потреби – дитячих прсихотерапевтів.</p>
-                <img src="./assets/photo2.png"  alt="photo">
-            </article>
+      <section class="description-container flex-column-wraper">
+        <article class="description-block flex-wraper">
+          <div class="block-text">
+            <h3 class="block-header">Реабілітаційний центр</h3>
+            <p class="small-text">
+              Ми допомагаємо людям, які постраждали знайти правильне лікування.
+              У нашому фонді є чотири напрями: фізичної та реабілітаційної
+              медицини, терапевтичне, неврологічне та хірургічне. Ми маємо
+              заклади-партнери, де швидко та якісно можуть надати допомогу.
+            </p>
+          </div>
+          <img class="block-image" src="./assets/photo1.png" alt="photo" />
+        </article>
 
-            <button>Дізнатися більше</button>
+        <article class="description-block flex-wraper">
+          <div class="block-text">
+            <h3 class="block-header">Робота з дітьми</h3>
+            <p class="small-text">
+              Діти – найвразливіша частина суспільства, і їм особливо потрібна
+              підтримка дорослих. Тому наш фонд збирає речі для дітей, проводить
+              літні й зимові табори, майстер-класи та за потреби – дитячих
+              прсихотерапевтів.
+            </p>
+          </div>
+          <img class="block-image" src="./assets/photo2.png" alt="photo" />
+        </article>
 
-            <article>
-                <p>Наша місія – щоб кожен українець мав можливість отримати допомогу й не залишився наодинці зі своїми проблемами</p>
-                <img src="./assets/photo3.png"  alt="photo">
-            </article>
+        <button class="button blue">Дізнатися більше</button>
+      </section>
 
-            <div>
-                <h2>Підтримайте нашу роботу!</h2>
-                <h5>Усі ваші донати йдуть саме на роботу фонду, заробітні плати ми виплачуємо з коштів грантодавців</h5>
-                <p>Наша мета 10 000 000 гривень! </p>
+      <section class="description-container">
+        <article class="mission-block flex-wraper">
+          <p class="medium-text block-text-v2">
+            Наша місія – щоб кожен українець мав можливість отримати допомогу й
+            не залишився наодинці зі своїми проблемами
+          </p>
+          <img
+            class="block-image-v2"
+            id="back-image"
+            src="./assets/back.png"
+            alt="photo"
+          />
+          <img
+            class="block-image-v2"
+            id="front-image"
+            src="./assets/photo3.png"
+            alt="photo"
+          />
+        </article>
+      </section>
 
-                <!-- Counter-->
-                <button>Дізнатися більше</button>
-            </div>
-        </section>
+      <section class="description-container flex-column-wraper">
+        <article class="donation-block flex-column-wraper">
+          <h2 class="block-header">Підтримайте нашу роботу!</h2>
+          <h5 class="grey-text">
+            Усі ваші донати йдуть саме на роботу фонду, заробітні плати ми
+            виплачуємо з коштів грантодавців
+          </h5>
+          <p class="medium-text">Наша мета 10 000 000 гривень!</p>
+        </article>
+        <!-- Counter-->
+
+        <div class="counter-container flex-wraper">
+          <h2 class="counter-segment block-header">00</h2>
+          <h2 class="counter-segment block-header">230</h2>
+          <h2 class="counter-segment block-header">025</h2>
+        </div>
+
+        <button class="button blue">Дізнатися більше</button>
+      </section>
     </main>
 
-    <footer>
-        <section>
-            <h2>Контакти</h2>
+    <footer class="footer-container flex-column-wraper">
+      <section class="contact-block flex-wraper">
+        <h2 class="block-header">Контакти</h2>
 
-        <div>
-            <img src="./assets/Phone.svg"  alt="telephone">
-            <p>Якщо у вас виникають питання – телефонуйте за номером 0-987-654-321</p>
+        <article class="contact-info">
+          <div class="contact-info-part" id="first-part">
+            <img
+              class="contact-image"
+              src="./assets/Phone.svg"
+              alt="telephone"
+            />
+            <p class="small-text">
+              Якщо у вас виникають питання – телефонуйте за номером
+              0-987-654-321
+            </p>
+          </div>
+          <div class="contact-info-part" id="second-part">
+            <img
+              class="contact-image"
+              src="./assets/TelegramLogo.svg"
+              alt="telegram"
+            />
+            <img
+              class="contact-image"
+              src="./assets/WhatsappLogo.svg"
+              alt="whatsapp"
+            />
+            <p class="small-text">Або пишіть нам у чат-бот</p>
+          </div>
+        </article>
+      </section>
 
-            <img src="./assets/TelegramLogo.svg"  alt="telegram">
-            <img src="./assets/WhatsappLogo.svg"  alt="whatsapp">
-            <p>Або пишіть нам у чат-бот</p>
-        </div>
-        </section>
-        
-        <section> 
-            <img src="./assets/mail.png"  alt="form">
+      <section class="form-block flex-wraper">
+        <img class="form-image" src="./assets/mail.png" alt="form" />
 
-            <p>Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</p>
-
-            <input placeholder="Ім'я">
-            <input placeholder="Емейл">
-            <button>Підписатися</button>
-
-        </section>
-
-
+        <article class="form-text flex-column-wraper">
+          <p class="medium-text">
+            Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку
+          </p>
+          <div class="input-block flex-column-wraper">
+            <input class="form-input small-text" placeholder="Ім'я" />
+            <input class="form-input small-text" placeholder="Емейл" />
+            <button class="button blue">Підписатися</button>
+          </div>
+        </article>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
