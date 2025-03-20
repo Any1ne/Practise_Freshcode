@@ -48,3 +48,8 @@ body {
   font-size: 4em;
   line-height: 0.94;
 }
+
+.menu-item {
+  margin-left: 3.1em;
+  font-size: 1.1em;
+}
